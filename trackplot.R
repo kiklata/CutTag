@@ -1,4 +1,8 @@
-bw = c(list.files(getwd())[c(6,8)])
+#remotes::install_github(repo = "poisonalien/trackplot")
+#install dependencies:: bwtool, mysql,
+library(trackplot)
+
+bw = c(list.files('/home/zhepan/CutTag/data',full.names = T,pattern = 'bigwig'))
 bigWigs = read_coldata(bws = bw, build = "hg38")
 pos_loci = "1:154935000-154945000"
 
