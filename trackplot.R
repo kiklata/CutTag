@@ -11,5 +11,5 @@ t = track_extract(colData = bigWigs, loci =  pos_loci)
 track_cols = c("#d35400","#2980b9")
 
 track_plot(summary_list = t,col = track_cols,
-           draw_gene_track = F,
-           show_ideogram = F,)
+           draw_gene_track = T,
+           show_ideogram = T,)
