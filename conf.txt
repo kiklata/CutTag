@@ -1,0 +1,32 @@
+##############general conf#########################
+
+cores=8
+
+reference=/home/zhepan/Reference/CutTag/subUCSC.bed
+
+result_path=/home/zhepan/CutTag/results
+
+plot_path=/home/zhepan/CutTag/plots
+
+###############computeMatrix #####################################
+
+data="/home/zhepan/CutTag/data/p300_combo2.uniq.bam.RPKM.bigwig /home/zhepan/CutTag/data/p300_dmso2.uniq.bam.RPKM.bigwig"
+
+result=h3k27ac.sub.matrix.gz
+
+##################plotHeatmap ############################################
+
+plot_heatmap=h3k27ac.subtt.heatmap.pdf
+
+heatmap_label="Combo DMSO"
+heatmap_color="white,#992C1B"
+## h3k27ac:#992C1B P300:#094D2E
+heatmap_kn=1
+
+##################plotProfile ############################################
+
+plot_profile=p300.sub.profile.pdf
+
+profile_label="Combo DMSO"
+profile_color="red blue"
+
